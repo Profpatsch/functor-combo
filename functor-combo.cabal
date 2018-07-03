@@ -26,6 +26,7 @@ Library
                      , base-orphans
                      , containers
                      , data-inttrie
+                     , data-fix == 0.2.*
                      , lub
                      , TypeCompose >= 0.9.4
                      , type-unary

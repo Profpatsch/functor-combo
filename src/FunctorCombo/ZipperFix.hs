@@ -12,21 +12,16 @@
 -- Zippers for functor fixpoints
 ----------------------------------------------------------------------
 
-module FunctorCombo.ZipperFix (Context,Zipper, up,up',down) where
+module FunctorCombo.ZipperFix (Context, Zipper, up, up', down) where
 
 import Control.Arrow (first)
+import Data.Fix (Fix(Fix, unFix))
 
 -- import FunctorCombo.Derivative
 -- import FunctorCombo.Holey
 
 import FunctorCombo.DHoley
 
-
-newtype Fix f = Fix { unFix :: f (Fix f) }
-
--- If Haskell had recursive type synonyms:
--- 
---   Fix f =~ f (Fix f)
 
 
 -- | Context for functor fixpoints
