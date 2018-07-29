@@ -16,7 +16,7 @@
 
 module FunctorCombo.DHoley (Holey(..), fill) where
 
-import Control.Arrow (first,second)
+import Data.Bifunctor (first,second)
 
 import FunctorCombo.Functor
 
